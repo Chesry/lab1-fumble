@@ -24,13 +24,12 @@
     --fs-normal: 16px;
 
     /* Font styling */
-    --fw-h1: 800;
-    --fw-h2: 700;
-    --fw-h3: 600;
-    --fw-h4: 500;
-    --fw-normal-regular: 400;
-    --fw-normal-bold: 700;
-    --fw-normal-light: 300;
+    --fw-extra-bold: 800;
+    --fw-bold: 700;
+    --fw-semi-bold: 600;
+    --fw-medium: 500;
+    --fw-regular: 400;
+    --fw-light: 300;
 }
 /*---------------------------------------*/
 /* # GENERIC                             */
@@ -59,27 +58,27 @@ html {
 /*---------------------------------------*/
 h1 {
     font-size: var(--fs-h1);
-    font-weight: var(--fw-h1);
+    font-weight: var(--fw-extra-bold);
 }
 
 h2 {
     font-size: var(--fs-h2);
-    font-weight: var(--fw-h2);
+    font-weight: var(--fw-bold);
 }
 
 h3 {
     font-size: var(--fs-h3);
-    font-weight: var(--fw-h3);
+    font-weight: var(--fw-semi-bold);
 }
 
 h4 {
     font-size: var(--fs-h4);
-    font-weight: var(--fw-h4);
+    font-weight: var(--fw-medium);
 }
 
 p {
     font-size: var(--fs-normal);
-    font-weight: var(--fw-normal-regular);
+    font-weight: var(--fw-regular);
 }
 
 h1,
@@ -169,6 +168,61 @@ a {
 }
 
 /* About section */
+.about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--spacing-64);
+}
+
+.about-content-title h2, .about-content-title span, .about-column-number h3 {
+    line-height: 1;
+}
+
+.about-content-container {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-content-top {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+    padding-bottom: var(--spacing-64);
+}
+
+.about-content-title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.about-content-mid {
+    display: flex;
+    align-items: stretch;
+    gap: var(--spacing-32);
+}
+
+.about-border {
+    width: 5px;
+    border-radius: var(--spacing-32);
+    height: auto;
+    background-color: var(--color-yellow);
+}
+
+.about-column-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-8);
+}
+
+.about-content-bottom {
+    margin-top: auto;
+}
+
 .about-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -200,7 +254,17 @@ a {
 /*---------------------------------------*/
 /* # UTILITIES (reusable)                */
 /*---------------------------------------*/
-
+.button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    background-color: var(--color-yellow);
+    color: var(--color-off-white);
+    padding: var(--spacing-16) var(--spacing-32);
+    border-radius: var(--spacing-32);
+    width: fit-content;
+    font-weight: var(--fw-semi-bold);
+}
 /*---------------------------------------*/
 /* # MEDIA                               */
 /*---------------------------------------*/
