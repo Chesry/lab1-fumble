@@ -1,12 +1,20 @@
 .about {
+    background-color: var(--color-off-white);
+}
+
+.about-container {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--spacing-64);
 }
 
 .about-content-title h2, .about-content-title span, .about-column-number h3 {
     line-height: 1;
+}
+
+.about-content-title span {
+    font-weight: var(--fw-light);
 }
 
 .about-content-container {
