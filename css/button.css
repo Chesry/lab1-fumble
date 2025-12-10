@@ -1,0 +1,11 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    background-color: var(--color-yellow);
+    color: var(--color-off-white);
+    padding: var(--spacing-16) var(--spacing-32);
+    border-radius: var(--spacing-32);
+    width: fit-content;
+    font-weight: var(--fw-semi-bold);
+}
