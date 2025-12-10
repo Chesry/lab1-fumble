@@ -189,6 +189,10 @@ a {
     border-radius: var(--spacing-32);
 }
 
+.about-grid-item-a { grid-area: a; }
+.about-grid-item-b { grid-area: b; }
+.about-grid-item-c { grid-area: c; }
+
 /*---------------------------------------*/
 /* # OBJECTS (layout structures)         */
 /*---------------------------------------*/
