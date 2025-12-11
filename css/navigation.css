@@ -34,7 +34,7 @@
 .navigation-hamburger-label {
     cursor: pointer;
     position: absolute;
-    right: var(--spacing-24);
+    right: var(--spacing-32);
     z-index: 100;
 }
 
@@ -63,8 +63,11 @@
     opacity: 0;
 }
 
-@media (max-width: 768px) {
-    /* Navigation */
+@media (max-width: 992px) {
+    .navigation {
+        padding: var(--spacing-24) var(--spacing-32);
+    }
+
     .navigation-hamburger-label {
         display: inline-block;
     }
@@ -85,11 +88,5 @@
 
     .navigation-list-item {
         color: var(--color-green);
-    }
-}
-
-@media (max-width: 992px) {
-    .navigation-list {
-        gap: var(--spacing-16);
     }
 }

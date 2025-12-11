@@ -3,3 +3,9 @@
     margin: 0 auto;
     padding: var(--spacing-64);
 }
+
+@media (max-width: 992px) {
+    .container {
+        padding: var(--spacing-32);
+    }
+}
