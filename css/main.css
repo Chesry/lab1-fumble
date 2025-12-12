@@ -18,6 +18,7 @@
 /* # COMPONENTS (UI)                     */
 /*---------------------------------------*/
 @import url("navigation.css");
+@import url("header.css");
 @import url("about.css");
 /*---------------------------------------*/
 /* # OBJECTS (layout structures)         */
@@ -26,6 +27,7 @@
 /*---------------------------------------*/
 /* # UTILITIES (reusable)                */
 /*---------------------------------------*/
+@import url("reusable.css");
 @import url("button.css");
 /*---------------------------------------*/
 /* # TOOLS (mixins)                      */
