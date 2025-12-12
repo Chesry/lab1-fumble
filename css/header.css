@@ -55,7 +55,7 @@
 
 @media (max-width: 576px) {
     .header-container {
-        padding: var(--spacing-16) var(--spacing-16) 0 var(--spacing-16);
+        padding: var(--spacing-24) var(--spacing-24) 0 var(--spacing-24);
     }
 }
 
