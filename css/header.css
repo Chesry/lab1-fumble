@@ -13,13 +13,12 @@
     flex-direction: column;
     gap: var(--spacing-32);
     width: 600px;
-    height: 500px;
 }
 
 .header-right {
     object-fit: cover;
     width: auto;
-    height: 600px;
+    height: 550px;
 }
 
 .header-download-flex {
@@ -32,11 +31,14 @@
 }
 
 @media (max-width: 1200px) {
+    .header-container {
+        gap: var(--spacing-32);
+    }
+    
     .header-right {
         height: 500px;
     }
 }
-
 
 @media (max-width: 992px) {
     .header-container {

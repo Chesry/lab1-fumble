@@ -9,12 +9,37 @@
     gap: var(--spacing-64);
 }
 
-.about-content-container {
+.about-left, .about-right {
     width: 600px;
     height: 500px;
+}
+
+.about-left {
     display: flex;
     flex-direction: column;
 }
+
+.about-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b"
+    "a c"
+    "a c";
+    gap: var(--spacing-24);
+}
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--spacing-32);
+}
+
+.about-grid-item-a { grid-area: a; }
+.about-grid-item-b { grid-area: b; }
+.about-grid-item-c { grid-area: c; }
 
 .about-content-top {
     padding-bottom: var(--spacing-64);
@@ -48,44 +73,20 @@
     margin-top: auto;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "a b"
-    "a c"
-    "a c";
-    gap: var(--spacing-24);
-    width: 600px;
-    height: 500px;
-}
-
-.about-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: var(--spacing-32);
-}
-
-.about-grid-item-a { grid-area: a; }
-.about-grid-item-b { grid-area: b; }
-.about-grid-item-c { grid-area: c; }
-
 @media (max-width: 1200px) {
     .about-container {
         gap: var(--spacing-32);
     }
 
-    .about-content-container, .about-grid {
+    .about-left, .about-right {
         height: 550px;
     }
 
-    .about-content-container {
+    .about-left {
         justify-content: space-between;
     }
 
-    .about-grid {
+    .about-right {
         gap: var(--spacing-16);
     }
 
@@ -104,33 +105,29 @@
         flex-direction: column-reverse;
     }
 
-    .about-content-container, .about-grid {
+    .about-left, .about-right {
         width: 100%;
         height: 100%;
     }
 
-    .about-content-container {
+    .about-right {
+        height: 350px;
+    }
+
+    .about-left {
         gap: var(--spacing-32);
     }
 
-    .about-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "a b"
-        "a c";
-    }
-}
-
-@media (max-width: 576px) {
-    .about-grid {
+    .about-right {
         display: inline-block;
     }
 
     .about-grid-item-b, .about-grid-item-c {
         display: none;
     }
+}
 
+@media (max-width: 576px) {
     .about-content-mid {
         flex-direction: column;
         align-items: center;
