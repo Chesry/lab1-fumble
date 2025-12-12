@@ -53,10 +53,12 @@
 
 .navigation-hamburger-checkbox:checked + .navigation-hamburger-label .navigation-hamburger-bar-top {
     transform: rotate(45deg);
+    background-color: var(--color-green);
 }
 
 .navigation-hamburger-checkbox:checked + .navigation-hamburger-label .navigation-hamburger-bar-bottom {
     transform: rotate(-45deg) translate(-2px, 3.75px);
+    background-color: var(--color-green);
 }
 
 .navigation-hamburger-checkbox:checked + .navigation-hamburger-label .navigation-hamburger-bar-mid {
