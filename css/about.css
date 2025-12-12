@@ -158,8 +158,4 @@
     .about-border {
         display: none;
     }
-
-    .about-content-bottom {
-        align-self: flex-end;
-    }
 }

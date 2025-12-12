@@ -99,3 +99,13 @@
         color: var(--color-green);
     }
 }
+
+@media (max-width: 576px) {
+    .navigation {
+        padding: var(--spacing-24) var(--spacing-16);
+    }
+
+    .navigation-hamburger-label {
+        right: var(--spacing-16);
+    }
+}

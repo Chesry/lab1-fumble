@@ -9,3 +9,10 @@
         padding: var(--spacing-32);
     }
 }
+
+@media (max-width: 576px) {
+    .container {
+        padding: var(--spacing-16);
+    }
+}
+
