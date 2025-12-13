@@ -1,13 +1,21 @@
-.button,.button-full-width {
+.button, .button-full-width, .button-outline {
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
-    background-color: var(--color-yellow);
-    color: var(--color-off-white);
     padding: var(--spacing-16) var(--spacing-32);
     border-radius: var(--spacing-32);
     width: fit-content;
     font-weight: var(--fw-semi-bold);
+}
+
+.button, .button-full-width {
+    background-color: var(--color-yellow);
+    color: var(--color-off-white);
+}
+
+.button-outline {
+    border: 2px solid var(--color-yellow);
+    color: var(--color-yellow);
 }
 
 @media (max-width: 576px) {
