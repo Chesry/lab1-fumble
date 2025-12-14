@@ -91,6 +91,10 @@
 }
 
 @media (max-width: 768px) {
+    .footer-container {
+        gap: var(--spacing-32);
+    }
+
     .footer-top {
         flex-direction: column;
         gap: var(--spacing-32);
@@ -105,3 +109,11 @@
         gap: var(--spacing-32);
     }
 }
+
+@media (max-width: 576px) {
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: var(--spacing-8);
+    }
+}
+

@@ -6,9 +6,16 @@
 
 @media (max-width: 992px) {
     .container {
+        padding: var(--spacing-48);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
         padding: var(--spacing-32);
     }
 }
+
 
 @media (max-width: 576px) {
     .container {
