@@ -16,6 +16,11 @@
 
 .navigation-list-item {
     color: var(--color-off-white);
+    transition: all .2s ease-in;
+}
+
+.navigation-list-item:hover {
+    color: var(--color-yellow);
 }
 
 .navigation-hamburger-checkbox, .navigation-hamburger-label {

@@ -32,6 +32,11 @@
     width: fit-content;
 }
 
+.merch-controls a:first-child {
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
 .merch-items {
     display: flex;
     align-items: center;

@@ -18,9 +18,22 @@
     color: var(--color-yellow);
 }
 
+.button i, .button-full-width i {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover i,
+.button-full-width:hover i {
+    transform: translateX(4px); 
+}
+
 @media (max-width: 576px) {
     .button-full-width {
         width: 100%;
         justify-content: center;
     }
 }
+
