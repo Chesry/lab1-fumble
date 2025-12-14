@@ -1,3 +1,16 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-64);
+}
+
+.footer-divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-off-white);
+    opacity: .5;
+}
+
 .footer-top {
     display: flex;
     justify-content: space-between;
@@ -42,6 +55,39 @@
 
 .footer-list-item:hover {
     color: var(--color-yellow);
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copy, .footer-button {
+    color: var(--color-off-white);
+    opacity: .5;
+}
+
+.footer-lang {
+    display: flex;
+    align-items: stretch;
+    gap: var(--spacing-8);
+}
+
+.footer-button {
+    background-color: transparent;
+    border: none;
+}
+
+.footer-lang-divider {
+    height: auto;
+    width: 1px;
+    background-color: var(--color-off-white);
+    opacity: .5;
+}
+
+.footer-lang button:first-of-type {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
