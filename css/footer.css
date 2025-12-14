@@ -40,6 +40,12 @@
 .footer-social {
     line-height: 1;
     width: fit-content;
+    transition: all .2s ease-in;
+}
+
+.footer-social:hover {
+    cursor: pointer;
+    color: var(--color-yellow);
 }
 
 .footer-list {

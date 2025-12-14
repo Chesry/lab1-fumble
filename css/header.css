@@ -57,5 +57,22 @@
     .header-container {
         padding: var(--spacing-24) var(--spacing-24) 0 var(--spacing-24);
     }
+
+    .header-title {
+        width: auto;
+    }
+
+    .header-right {
+        align-self: center;
+    }
+
+    .header-download-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-download-flex img {
+        width: 150px;
+    }
 }
 
