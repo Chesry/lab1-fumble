@@ -23,6 +23,7 @@
 @import url("work.css");
 @import url("member.css");
 @import url("merch.css");
+@import url("faq.css");
 /*---------------------------------------*/
 /* # OBJECTS (layout structures)         */
 /*---------------------------------------*/
@@ -39,5 +40,5 @@
 /*---------------------------------------*/
 /* # LIBRARIES (styling)                 */
 /*---------------------------------------*/
-
+@import url("bootstrap-accordion.css")
 
